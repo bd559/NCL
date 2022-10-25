@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NCL</string>
+
+    <string name="ship_name">Ship Name: %s</string>
+    <string name="passenger_capacity">Passenger Capacity: %s</string>
+    <string name="crew">Crew: %s</string>
+    <string name="inaugural_date">Inaugural Date: %s</string>
+
+    <string name="sky">SKY</string>
+    <string name="bliss">BLISS</string>
+    <string name="escape">ESCAPE</string>
+
+    <string name="ship_error">Could not find ship</string>
+</resources>

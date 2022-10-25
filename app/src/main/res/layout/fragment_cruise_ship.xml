@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_crew, tv_error, tv_inauguralDate, tv_passengerCapacity, tv_shipName" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_shipName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_passengerCapacity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_passengerCapacity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_crew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_shipName" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_crew"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_inauguralDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_passengerCapacity" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_inauguralDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/btn_sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_crew" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sky"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sky"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_bliss"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_inauguralDate" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bliss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bliss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_escape"
+        app:layout_constraintStart_toEndOf="@id/btn_sky"
+        app:layout_constraintTop_toBottomOf="@id/tv_inauguralDate" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_escape"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/escape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_bliss"
+        app:layout_constraintTop_toBottomOf="@id/tv_inauguralDate" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_error"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/ship_error"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        android:elevation="2dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
